@@ -1,0 +1,169 @@
+@import '../shared/styles/color-variables.styles.scss';
+@import '../../styles.scss';
+.container-common {
+    padding: 20px;
+    min-height: 324px;
+    cursor: pointer;
+}
+
+#about-container {
+    @extend .container-common;
+    background-color: white;
+}
+
+#gallery-container {
+    @extend .container-common;
+    background-color: $grey1;
+}
+
+#accomplishments-container {
+    @extend .container-common;
+    background-color: $grey2;
+}
+
+#contact-container {
+    @extend .container-common;
+    background-color: $grey3;
+}
+
+
+/**------CSS FOR GRAPHIC ANIMATION------**/
+
+.nav-video {
+    width: 224px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    margin: 0;
+}
+
+.nav-video-2 {
+    width: 255px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    margin: 0;
+}
+
+svg {
+    position: static;
+    display: block;
+    transform: none;
+    z-index: 300;
+    opacity: 1;
+    transition: none;
+    transform-origin: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) scale(1.01);
+    margin: 0;
+    z-index: 2;
+}
+
+
+/**------ABOUT-SVG SECTION---------**/
+
+#svg-graphic-about {
+    width: 300px;
+}
+
+svg#svg-graphic-about>rect {
+    -webkit-mask: url(#about-mask);
+    mask: url(#about-mask);
+    fill: #fff;
+}
+
+
+/**------GALLERY-SVG SECTION---------**/
+
+#svg-graphic-gallery {
+    width: 300px;
+}
+
+svg#svg-graphic-gallery>rect {
+    -webkit-mask: url(#gallery-mask);
+    mask: url(#gallery-mask);
+    fill: $grey1;
+}
+
+
+/**------ACCOMPLISHMENTS-SVG SECTION---------**/
+
+#svg-graphic-accomplish {
+    width: 300px;
+}
+
+svg#svg-graphic-accomplish>rect {
+    -webkit-mask: url(#accomplish-mask);
+    mask: url(#accomplish-mask);
+    fill: $grey2;
+}
+
+
+/**------CONTACT-SVG SECTION---------**/
+
+#svg-graphic-contact {
+    width: 300px;
+}
+
+svg#svg-graphic-contact>rect {
+    -webkit-mask: url(#contact-mask);
+    mask: url(#contact-mask);
+    fill: $grey3;
+}
+
+
+/**MAIN-LOGO**/
+
+.main-logo {
+    position: fixed;
+    left: 35px;
+    top: 30px;
+    z-index: 500;
+    width: 200px;
+}
+
+.social-section {
+    background-color: transparent;
+    position: fixed;
+    right: 30px;
+    top: 45px;
+    z-index: 500;
+}
+
+#about-container:hover .page-title span {
+    left: 70%;
+    transition-property: left;
+    transition-duration: 3s;
+}
+
+.page-title {
+    position: absolute;
+    font-weight: 600;
+    bottom: 20%;
+    left: 60%;
+    z-index: 500;
+    font-size: 18px;
+}
+
+.page-title:hover {
+    left: 80%;
+    transition-property: left;
+    transition-duration: 3s;
+}
+
+
+/**----------HOVER FUNCTINALITIES FOR PAGE TITLE */
+
+// #about-container:hover{
+// }

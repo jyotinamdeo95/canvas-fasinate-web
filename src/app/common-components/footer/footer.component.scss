@@ -1,0 +1,15 @@
+@import '../../../styles.scss';
+.footer-bg {
+    @extend .half-transparent;
+    position: fixed;
+    bottom: 0;
+    // height: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}

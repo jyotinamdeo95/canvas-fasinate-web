@@ -1,0 +1,10 @@
+@import '../../styles.scss';
+@import '../shared/styles/common-component.style.scss';
+.contact-section {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-section div {
+    padding: 20px;
+}

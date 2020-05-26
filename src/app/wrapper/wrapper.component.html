@@ -1,0 +1,91 @@
+<!-- COMMON-FOUR-GRID-LAYOUT-HOME-PAGE -->
+<div>
+    <div class="container-fluid" *ngIf="showHome else defaultPages">
+        <div>
+            <img [src]="siteLogo" class="main-logo">
+        </div>
+        <div class="row row-section">
+            <div class="col-md-6" id="about-container" (click)="displayPage('ABOUT')" (mouseover)="hoverOnGrid($event)" (mouseover)="mouseoutOnGrid($event)">
+                <img [src]="about_video" alt="contact image" class="nav-video">
+                <svg width="600" height="338" viewBox="0 0 600 338" class="svg-graphic" id="svg-graphic-about">
+                    <defs>
+                      <mask id="about-mask" x="0" y="0" width="600" height="338">
+                        <rect x="0" y="0" width="600" height="400" fill="#fff"></rect>
+                        <polygon points="330.2,28.7 269.8,28.7 149,308.3 215.4,308.3 241.4,247.9 358.6,247.9 384.6,308.3 451,308.3  "></polygon>            
+                      </mask>
+                    </defs>
+                    <rect x="0" y="0" width="600" height="338"></rect>
+                </svg>
+                <div class="page-title"><span>ABOUT</span></div>
+            </div>
+            <div class="col-md-6" id="gallery-container" (click)="displayPage('GALLERY')">
+                <img [src]="work_video" alt="contact image" class="nav-video">
+                <svg width="600" height="338" viewBox="0 0 600 338" class="svg-graphic" id="svg-graphic-gallery">
+                    <defs>
+                      <mask id="gallery-mask" x="0" y="0" width="600" height="338">
+                        <rect x="0" y="0" width="600" height="400" fill="#fff"></rect>
+                        <polygon points="440.9,33.8 432.4,33.8 331.4,33.8 329.1,33.8 268.6,33.8 268.5,34.1 167.7,34.1 167.6,33.8 
+                        102.5,33.8 196.5,303.2 241.2,303.2 299.8,115.9 358.8,303.2 403.5,303.2 497.5,33.8   "></polygon>
+                      </mask>
+                    </defs>
+                    <rect x="0" y="0" width="600" height="338"></rect>
+                </svg>
+                <div class="page-title"><span>WORK</span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" id="accomplishments-container" (click)="displayPage('ACCOMPLISHMENTS')">
+                <img [src]="blog_video" alt="contact image" class="nav-video-2">
+                <svg width="600" height="338" viewBox="0 0 600 338" class="svg-graphic" id="svg-graphic-accomplish">
+                <defs>
+                  <mask id="accomplish-mask" x="0" y="0" width="600" height="338">
+                    <rect x="0" y="0" width="600" height="400" fill="#fff"></rect>
+                    <path d="M396.2,186.5c-10.3-11.9-24.1-19.7-41.4-23.4c4.8-2.1,8.1-3.7,10-4.6c1.9-0.9,5.2-3.3,10-7c14.1-10.7,21.2-26.9,21.2-48.8
+                    c0-18.1-6.3-34.4-18.8-48.8c-6.9-7.7-17.3-13.9-31-18.4c-13.7-4.5-30.1-6.8-49-6.8H188.4v279.6h122.4c38.4,0,65.3-8.7,80.8-26
+                    c13.3-14.9,20-32.1,20-51.6C411.6,213.1,406.5,198.4,396.2,186.5z"></path>
+                  </mask>
+                </defs>
+                <rect x="0" y="0" width="600" height="338"></rect>
+                </svg>
+                <div class="page-title"><span>BLOG</span></div>
+            </div>
+            <div class="col-md-6" id="contact-container" (click)="displayPage('CONTACT')">
+                <img [src]="contact_video" alt="contact image" class="nav-video-2">
+                <svg width="600" height="338" viewBox="0 0 600 338" class="svg-graphic" id="svg-graphic-contact">
+                    <defs>
+                      <mask id="contact-mask" x="0" y="0" width="600" height="338">
+                        <rect x="0" y="0" width="600" height="338" fill="#fff"></rect>
+                        <path d="M297.1,306c-75.8,0-137.5-61.7-137.5-137.5S221.3,31,297.1,31c49.2,0,94.9,26.5,119.3,69.2l-120,67.9l119.1,70.2
+          c-11.9,20.2-28.9,37.1-49.1,48.9C345.6,299.5,321.5,306,297.1,306z"></path>
+                    </mask>
+                    </defs>
+                    <rect x="0" y="0" width="600" height="338"></rect>
+                </svg>
+                <div class="page-title"><span>CONTACT</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- INDIVIDUAL-PAGE-LAYOUT -->
+    <ng-template #defaultPages>
+        <div class="container-fluid">
+            <!-- NAVBAR COMPONENT -->
+            <navbar (closePageEvent)="closePage()"></navbar>
+            <!-- ABOUT-PAGE -->
+            <ng-container *ngIf="showAbout">
+                <about></about>
+            </ng-container>
+            <!-- GALLERY-PAGE -->
+            <ng-container *ngIf="showWork">
+                <gallery></gallery>
+            </ng-container>
+            <!-- ACCOMPLISHMENTS-PAGE -->
+            <ng-container *ngIf="showBlog">
+                <accomplishments></accomplishments>
+            </ng-container>
+            <!-- CONTACT-PAGE -->
+            <ng-container *ngIf="showContact">
+                <contact></contact>
+            </ng-container>
+        </div>
+    </ng-template>
+</div>

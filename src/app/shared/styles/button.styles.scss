@@ -1,0 +1,8 @@
+@import './color-variables.styles.scss';
+.peach-btn {
+    color: $light-black;
+    background-color: $peach;
+    padding: 10px 25px;
+    border-radius: none;
+    border: none;
+}
