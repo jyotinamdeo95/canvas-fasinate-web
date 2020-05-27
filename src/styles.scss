@@ -17,9 +17,7 @@ body {
 }
 
 .wrapper {
-    // height: 100vh;
-    // display: grid;
-    // grid-template-rows: 90px 1fr 90px;
+    min-height: 420px;
 }
 
 .comp-section {
@@ -39,4 +37,10 @@ body {
     width: 30px;
     height: 30px;
     margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }

@@ -3,8 +3,39 @@
 .contact-section {
     display: flex;
     justify-content: center;
+    padding: 0 20px;
 }
 
-.contact-section div {
+// .contact-section div {
+//     padding: 20px;
+// }
+.contact-blocks {
+    border-radius: 10px;
+    height: 500px;
     padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0.3px 0px 10.2px 4.2px rgba(0, 0, 0, 0.2);
+}
+
+#contact-banner {
+    width: 100%;
+    height: 100%;
+}
+
+#send-btn {
+    color: white;
+    border-radius: 20px;
+    background-color: rgb(115, 243, 170);
+    margin-top: 50px;
+}
+
+.social-icon-block {}
+
+.social-wrapper {
+    display: flex;
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 65px;
 }

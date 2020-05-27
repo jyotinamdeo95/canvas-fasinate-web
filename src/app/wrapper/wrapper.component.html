@@ -1,13 +1,13 @@
 <!-- COMMON-FOUR-GRID-LAYOUT-HOME-PAGE -->
-<div>
-    <div class="container-fluid" *ngIf="showHome else defaultPages">
-        <div>
-            <img [src]="siteLogo" class="main-logo">
-        </div>
-        <div class="row row-section">
-            <div class="col-md-6" id="about-container" (click)="displayPage('ABOUT')" (mouseover)="hoverOnGrid($event)" (mouseover)="mouseoutOnGrid($event)">
-                <img [src]="about_video" alt="contact image" class="nav-video">
-                <svg width="600" height="338" viewBox="0 0 600 338" class="svg-graphic" id="svg-graphic-about">
+<!-- class="container-fluid" -->
+<div class="container-fluid" *ngIf="showHome else defaultPages">
+    <div>
+        <img [src]="siteLogo" class="main-logo">
+    </div>
+    <div class="row row-section">
+        <div class="col-md-6" id="about-container" (click)="displayPage('ABOUT')" (mouseover)="hoverOnGrid($event)" (mouseover)="mouseoutOnGrid($event)">
+            <img [src]="about_video" alt="contact image" class="nav-video">
+            <svg width="600" height="338" viewBox="0 0 600 338" class="svg-graphic" id="svg-graphic-about">
                     <defs>
                       <mask id="about-mask" x="0" y="0" width="600" height="338">
                         <rect x="0" y="0" width="600" height="400" fill="#fff"></rect>
@@ -16,11 +16,11 @@
                     </defs>
                     <rect x="0" y="0" width="600" height="338"></rect>
                 </svg>
-                <div class="page-title"><span>ABOUT</span></div>
-            </div>
-            <div class="col-md-6" id="gallery-container" (click)="displayPage('GALLERY')">
-                <img [src]="work_video" alt="contact image" class="nav-video">
-                <svg width="600" height="338" viewBox="0 0 600 338" class="svg-graphic" id="svg-graphic-gallery">
+            <div class="page-title"><span>ABOUT</span></div>
+        </div>
+        <div class="col-md-6" id="gallery-container" (click)="displayPage('GALLERY')">
+            <img [src]="work_video" alt="contact image" class="nav-video">
+            <svg width="600" height="338" viewBox="0 0 600 338" class="svg-graphic" id="svg-graphic-gallery">
                     <defs>
                       <mask id="gallery-mask" x="0" y="0" width="600" height="338">
                         <rect x="0" y="0" width="600" height="400" fill="#fff"></rect>
@@ -30,13 +30,13 @@
                     </defs>
                     <rect x="0" y="0" width="600" height="338"></rect>
                 </svg>
-                <div class="page-title"><span>WORK</span></div>
-            </div>
+            <div class="page-title"><span>WORK</span></div>
         </div>
-        <div class="row">
-            <div class="col-md-6" id="accomplishments-container" (click)="displayPage('ACCOMPLISHMENTS')">
-                <img [src]="blog_video" alt="contact image" class="nav-video-2">
-                <svg width="600" height="338" viewBox="0 0 600 338" class="svg-graphic" id="svg-graphic-accomplish">
+    </div>
+    <div class="row">
+        <div class="col-md-6" id="accomplishments-container" (click)="displayPage('ACCOMPLISHMENTS')">
+            <img [src]="blog_video" alt="contact image" class="nav-video-2">
+            <svg width="600" height="338" viewBox="0 0 600 338" class="svg-graphic" id="svg-graphic-accomplish">
                 <defs>
                   <mask id="accomplish-mask" x="0" y="0" width="600" height="338">
                     <rect x="0" y="0" width="600" height="400" fill="#fff"></rect>
@@ -47,11 +47,11 @@
                 </defs>
                 <rect x="0" y="0" width="600" height="338"></rect>
                 </svg>
-                <div class="page-title"><span>BLOG</span></div>
-            </div>
-            <div class="col-md-6" id="contact-container" (click)="displayPage('CONTACT')">
-                <img [src]="contact_video" alt="contact image" class="nav-video-2">
-                <svg width="600" height="338" viewBox="0 0 600 338" class="svg-graphic" id="svg-graphic-contact">
+            <div class="page-title"><span>BLOG</span></div>
+        </div>
+        <div class="col-md-6" id="contact-container" (click)="displayPage('CONTACT')">
+            <img [src]="contact_video" alt="contact image" class="nav-video-2">
+            <svg width="600" height="338" viewBox="0 0 600 338" class="svg-graphic" id="svg-graphic-contact">
                     <defs>
                       <mask id="contact-mask" x="0" y="0" width="600" height="338">
                         <rect x="0" y="0" width="600" height="338" fill="#fff"></rect>
@@ -61,31 +61,34 @@
                     </defs>
                     <rect x="0" y="0" width="600" height="338"></rect>
                 </svg>
-                <div class="page-title"><span>CONTACT</span></div>
-            </div>
+            <div class="page-title"><span>CONTACT</span></div>
         </div>
     </div>
-    <!-- INDIVIDUAL-PAGE-LAYOUT -->
-    <ng-template #defaultPages>
-        <div class="container-fluid">
-            <!-- NAVBAR COMPONENT -->
-            <navbar (closePageEvent)="closePage()"></navbar>
-            <!-- ABOUT-PAGE -->
-            <ng-container *ngIf="showAbout">
-                <about></about>
-            </ng-container>
-            <!-- GALLERY-PAGE -->
-            <ng-container *ngIf="showWork">
-                <gallery></gallery>
-            </ng-container>
-            <!-- ACCOMPLISHMENTS-PAGE -->
-            <ng-container *ngIf="showBlog">
-                <accomplishments></accomplishments>
-            </ng-container>
-            <!-- CONTACT-PAGE -->
-            <ng-container *ngIf="showContact">
-                <contact></contact>
-            </ng-container>
-        </div>
-    </ng-template>
 </div>
+<!-- INDIVIDUAL-PAGE-LAYOUT -->
+<ng-template #defaultPages>
+    <div class="container-fluid page-section">
+        <!-- NAVBAR COMPONENT -->
+        <navbar (closePageEvent)="closePage()"></navbar>
+        <!-- ABOUT-PAGE -->
+        <ng-container *ngIf="showAbout">
+            <about></about>
+        </ng-container>
+        <!-- GALLERY-PAGE -->
+        <ng-container *ngIf="showWork">
+            <gallery></gallery>
+        </ng-container>
+        <!-- ACCOMPLISHMENTS-PAGE -->
+        <ng-container *ngIf="showBlog">
+            <accomplishments></accomplishments>
+        </ng-container>
+        <!-- CONTACT-PAGE -->
+        <ng-container *ngIf="showContact">
+            <contact></contact>
+        </ng-container>
+        <!-- FOOTER COMPONENT -->
+        <ng-container *ngIf="!showContact">
+            <footer></footer>
+        </ng-container>
+    </div>
+</ng-template>

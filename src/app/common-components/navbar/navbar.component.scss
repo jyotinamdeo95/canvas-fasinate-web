@@ -1,8 +1,8 @@
 @import '../../../styles.scss';
 .site-logo {
     position: fixed;
-    left: 35px;
-    top: 30px;
+    // left: 2px;
+    top: 6px;
     z-index: 500;
     width: 200px;
 }
@@ -16,7 +16,7 @@
     right: 25px;
     font-size: 35px;
     line-height: 35px;
-    padding: 20px;
+    padding: 13px;
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
 }

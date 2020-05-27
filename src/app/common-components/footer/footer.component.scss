@@ -1,14 +1,14 @@
 @import '../../../styles.scss';
 .footer-bg {
     @extend .half-transparent;
-    position: fixed;
-    bottom: 0;
+    // position: fixed;
+    // bottom: 0;
     // height: 70px;
     width: 100%;
     text-align: center;
 }
 
-.social-icon {
+.social-icon-footer {
     width: 30px;
     height: 30px;
     margin-right: 10px;

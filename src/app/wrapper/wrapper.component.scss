@@ -127,8 +127,8 @@ svg#svg-graphic-contact>rect {
 
 .main-logo {
     position: fixed;
-    left: 35px;
-    top: 30px;
+    // left: 35px;
+    top: 6px;
     z-index: 500;
     width: 200px;
 }
@@ -160,6 +160,11 @@ svg#svg-graphic-contact>rect {
     left: 80%;
     transition-property: left;
     transition-duration: 3s;
+}
+
+.page-section {
+    height: 500px;
+    min-height: 500px;
 }
 
 

@@ -7,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   /**SOCIAL ICONS */
-  facebookIcon:string ="assets/images/svgs/facebook-icon.svg";
-  instagramIcon:string ="assets/images/svgs/instagram-icon.svg";
-  twitterIcon:string ="assets/images/svgs/twitter-icon.svg";
-  youtubeIcon:string ="assets/images/svgs/youtube-icon.svg";
+  facebookIcon: string = "assets/images/svgs/facebook-square-brands.svg";
+  instagramIcon: string = "assets/images/svgs/instagram-square-brands.svg";
+  twitterIcon: string = "assets/images/svgs/twitter-square-brands.svg";
+  youtubeIcon: string = "assets/images/svgs/youtube-square-brands.svg";
+  phoneIcon: string = "assets/images/svgs/phone-square-alt-solid.svg";
+  gmailIcon: string = "assets/images/svgs/gmail.svg";
+  behanceIcon: string = "assets/images/svgs/behance-square-brands.svg";
 
 
   constructor() { }
