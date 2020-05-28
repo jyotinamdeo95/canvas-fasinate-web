@@ -2,13 +2,57 @@
 
 @import "~bootstrap/dist/css/bootstrap.css";
 @import './app/shared/styles/color-variables.styles.scss';
-@import './app/shared/styles/font.styles.scss';
+@import './app/shared/styles/font-size.styles.scss';
 html,
 body {
-    height: 100%;
+    height: 100% !important;
+    width: 100% !important;
     margin: 0;
+    // min-height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fff !important;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1025px) {
+     :root {
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1151px) and (min-height: 550px) {
+     :root {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 1152px) and (max-width: 1279px) and (min-height: 550px) {
+     :root {
+        font-size: 11.2px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1365px) and (min-height: 550px) {
+     :root {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1439px) and (min-height: 550px) {
+     :root {
+        font-size: 13.2px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1679px) and (min-height: 550px) {
+     :root {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1680px) and (max-width: 1940px) and (min-height: 550px) {
+     :root {
+        font-size: 16px;
+    }
 }
 
 .half-transparent {
@@ -18,14 +62,6 @@ body {
 
 .wrapper {
     min-height: 420px;
-}
-
-.comp-section {
-    // overflow-y: auto;
-}
-
-.green-bg {
-    background-color: $bg-seagreen;
 }
 
 .noMarPad {

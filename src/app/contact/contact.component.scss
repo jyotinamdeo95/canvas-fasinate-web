@@ -1,19 +1,19 @@
 @import '../../styles.scss';
-@import '../shared/styles/common-component.style.scss';
+@import '../shared/styles/common-styles.scss';
 .contact-section {
     display: flex;
     justify-content: center;
-    padding: 0 20px;
+    padding: 0 $u-20;
 }
 
 // .contact-section div {
 //     padding: 20px;
 // }
 .contact-blocks {
-    border-radius: 10px;
-    height: 500px;
-    padding: 20px;
-    margin: 10px 0;
+    border-radius: $u-10;
+    height: 31.25rem;
+    padding: $u-20;
+    margin: $u-10 0;
     box-shadow: 0.3px 0px 10.2px 4.2px rgba(0, 0, 0, 0.2);
 }
 
@@ -24,12 +24,10 @@
 
 #send-btn {
     color: white;
-    border-radius: 20px;
+    border-radius: $u-20;
     background-color: rgb(115, 243, 170);
-    margin-top: 50px;
+    margin-top: $u-50;
 }
-
-.social-icon-block {}
 
 .social-wrapper {
     display: flex;
@@ -37,5 +35,5 @@
 
 .contact-title {
     text-align: center;
-    margin-bottom: 65px;
+    margin-bottom: 4.0625rem;
 }

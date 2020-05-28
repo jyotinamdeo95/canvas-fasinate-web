@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { AccomplishmentsComponent } from './accomplishments/accomplishments.component';
+import { WorkComponent } from './work/work.component';
+import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './common-components/page-not-found/page-not-found.component';
 import { WrapperComponent } from './wrapper/wrapper.component';
@@ -23,11 +23,11 @@ const routes: Routes = [
         component: AboutComponent
       },
       {
-        path: 'gallery',
-        component: GalleryComponent
+        path: 'work',
+        component: WorkComponent
       }, {
-        path: 'accomplishments',
-        component: AccomplishmentsComponent
+        path: 'blog',
+        component: BlogComponent
       },
       {
         path: 'contact',

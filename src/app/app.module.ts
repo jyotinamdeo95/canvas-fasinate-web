@@ -5,8 +5,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { AccomplishmentsComponent } from './accomplishments/accomplishments.component';
+import { WorkComponent } from './work/work.component';
+import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './common-components/navbar/navbar.component';
 import { FooterComponent } from './common-components/footer/footer.component';
@@ -17,8 +17,8 @@ import { WrapperComponent } from './wrapper/wrapper.component';
   declarations: [
     AppComponent,
     AboutComponent,
-    GalleryComponent,
-    AccomplishmentsComponent,
+    WorkComponent,
+    BlogComponent,
     ContactComponent,
     NavbarComponent,
     FooterComponent,

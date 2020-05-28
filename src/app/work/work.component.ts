@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'gallery',
-  templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.scss']
+  selector: 'work',
+  templateUrl: './work.component.html',
+  styleUrls: ['./work.component.scss']
 })
-export class GalleryComponent implements OnInit {
+export class WorkComponent implements OnInit {
   /**------IMAGE(S)/ICON(S) VARIABLES----- */
 
   WORK_VIDEO: string = "assets/images/gifs/nebula.mp4";

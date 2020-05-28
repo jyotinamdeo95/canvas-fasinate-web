@@ -1,8 +1,9 @@
 @import '../shared/styles/color-variables.styles.scss';
 @import '../../styles.scss';
+@import '../shared/styles/common-styles.scss';
 .container-common {
-    padding: 20px;
-    min-height: 324px;
+    padding: $u-20;
+    min-height: 24.5rem;
     cursor: pointer;
 }
 
@@ -30,7 +31,7 @@
 /**------CSS FOR GRAPHIC ANIMATION------**/
 
 .nav-video {
-    width: 224px;
+    width: 14rem;
     height: auto;
     display: block;
     object-fit: cover;
@@ -42,7 +43,7 @@
 }
 
 .nav-video-2 {
-    width: 255px;
+    width: 18rem;
     height: auto;
     display: block;
     object-fit: cover;
@@ -74,7 +75,7 @@ svg {
 /**------ABOUT-SVG SECTION---------**/
 
 #svg-graphic-about {
-    width: 300px;
+    width: 21rem;
 }
 
 svg#svg-graphic-about>rect {
@@ -87,7 +88,7 @@ svg#svg-graphic-about>rect {
 /**------GALLERY-SVG SECTION---------**/
 
 #svg-graphic-gallery {
-    width: 300px;
+    width: 21rem;
 }
 
 svg#svg-graphic-gallery>rect {
@@ -100,7 +101,7 @@ svg#svg-graphic-gallery>rect {
 /**------ACCOMPLISHMENTS-SVG SECTION---------**/
 
 #svg-graphic-accomplish {
-    width: 300px;
+    width: 21rem;
 }
 
 svg#svg-graphic-accomplish>rect {
@@ -113,7 +114,7 @@ svg#svg-graphic-accomplish>rect {
 /**------CONTACT-SVG SECTION---------**/
 
 #svg-graphic-contact {
-    width: 300px;
+    width: 21rem;
 }
 
 svg#svg-graphic-contact>rect {
@@ -127,17 +128,16 @@ svg#svg-graphic-contact>rect {
 
 .main-logo {
     position: fixed;
-    // left: 35px;
-    top: 6px;
+    top: $u-6;
     z-index: 500;
-    width: 200px;
+    width: 12.5rem;
 }
 
 .social-section {
     background-color: transparent;
     position: fixed;
-    right: 30px;
-    top: 45px;
+    right: $u-30;
+    top: $u-45;
     z-index: 500;
 }
 
@@ -153,7 +153,7 @@ svg#svg-graphic-contact>rect {
     bottom: 20%;
     left: 60%;
     z-index: 500;
-    font-size: 18px;
+    font-size: $u-18;
 }
 
 .page-title:hover {
@@ -163,8 +163,8 @@ svg#svg-graphic-contact>rect {
 }
 
 .page-section {
-    height: 500px;
-    min-height: 500px;
+    height: 35rem;
+    min-height: 35rem;
 }
 
 

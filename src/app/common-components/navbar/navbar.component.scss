@@ -1,10 +1,11 @@
 @import '../../../styles.scss';
+@import '../../shared/styles/common-styles.scss';
+@import '../../wrapper/wrapper.component.scss';
 .site-logo {
     position: fixed;
-    // left: 2px;
-    top: 6px;
+    top: $u-6;
     z-index: 500;
-    width: 200px;
+    width: 14rem;
 }
 
 //////close-icon
@@ -12,11 +13,11 @@
     position: fixed;
     color: #000;
     z-index: 999;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    line-height: 35px;
-    padding: 13px;
+    top: $u-6;
+    right: $u-25;
+    font-size: $u-35;
+    line-height: $u-35;
+    padding: $u-13;
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
 }
@@ -29,14 +30,14 @@
 }
 
 .navbar-header {
-    height: 90px;
+    height: 6rem;
 }
 
 .social-section {
     background-color: transparent;
     position: fixed;
-    right: 90px;
-    top: 33px;
+    right: 6rem;
+    top: $u-33;
     z-index: 500;
     cursor: pointer;
 }

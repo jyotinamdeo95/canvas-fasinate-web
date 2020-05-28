@@ -1,5 +1,6 @@
 @import '../../styles.scss';
 @import '../shared/styles/common-component.style.scss';
+@import '../shared/styles/common-styles.scss';
 .about-container {
     // height: 500px;
     // min-height: 500px;
@@ -10,47 +11,7 @@
     height: inherit;
 }
 
-/////////////////////////////
-.nav-video {
-    width: 300px;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    margin: 0;
-}
-
-svg {
-    position: static;
-    display: block;
-    transform: none;
-    z-index: 300;
-    opacity: 1;
-    transition: none;
-    transform-origin: center;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0) scale(1.01);
-    margin: 0;
-    z-index: 2;
-}
-
-#svg-graphic-about {
-    width: 280px;
-}
-
-svg#svg-graphic-about>rect {
-    -webkit-mask: url(#about-mask);
-    mask: url(#about-mask);
-    fill: #fff;
-}
-
 .self-image {
-    width: 300px;
-    height: 350px;
+    width: 21rem;
+    height: 25rem;
 }
