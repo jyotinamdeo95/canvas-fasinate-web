@@ -12,7 +12,7 @@ export class AboutComponent implements OnInit {
 
   /**-----------IMAGE VARIABLES----------- */
   aboutImage:string = "assets/images/gallery/vinchi.jpg";
-  self_logo:string = "assets/images/gallery/vinchi.jpg";
+  selfImage:string = "assets/images/logo/Self-Portrait2.jpg";
   nebula:string ="assets/images/gifs/nebula.mp4";
   
 

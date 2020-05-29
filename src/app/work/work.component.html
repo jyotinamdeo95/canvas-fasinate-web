@@ -4,18 +4,14 @@
         <h3 class="page-title">WORK</h3>
 
         <div class="row noMarPad about-container">
-
-
-            <div class="p-5">
-                <div style="text-align: center;">
-                    <h2>
-                        Site Under Construction
-                    </h2>
+            <div class="col-md-6 col-xs-12 " *ngFor="let image of commissioned_arts">
+                <div class="commissioned-wrapper">
+                    <img [src]="image.src" class="commissioned-image">
+                    <div class="work-title">{{image.title}}</div>
                 </div>
 
             </div>
-        </div>
 
+        </div>
     </div>
-    <!-- <footer></footer> -->
 </div>

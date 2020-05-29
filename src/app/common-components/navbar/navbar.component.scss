@@ -30,7 +30,11 @@
 }
 
 .navbar-header {
-    height: 6rem;
+    height: 6rem !important;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 9;
 }
 
 .social-section {
