@@ -17,11 +17,11 @@ export class WorkComponent implements OnInit {
     },
     {
       "title":"Chetan Malvi (Friend)",
-      "src":"assets/images/work/Dost-Work.jpg"
+      "src":"assets/images/work/Chetan-Work2.jpg"
     },
     {
       "title":" Ansh Namdeo (Nephew)",
-      "src":"assets/images/work/Bhaiyu-Work.jpg"
+      "src":"assets/images/work/Ansh-Work.jpg"
     },
     {
       "title":"Prachi Namdeo (Cousin)",
