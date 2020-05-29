@@ -2,14 +2,16 @@
 @import '../shared/styles/common-component.style.scss';
 @import '../shared/styles/common-styles.scss';
 .gallery-blocks {
-    border-radius: $u-10;
-    min-height: 15rem;
-    padding: $u-20;
-    margin: $u-10 0;
-    box-shadow: 17px 18px 34px -8px rgba(0, 0, 0, 0.2);
+    // border-radius: $u-10;
+    // min-height: 15rem;
+    // padding: $u-20;
+    // margin: $u-10 0;
+    margin-bottom: $u-10;
+    // box-shadow: 17px 18px 34px -8px rgba(0, 0, 0, 0.2);
     // box-shadow: 0.3px 0px 10.2px 4.2px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
+    float: left;
 }
 
 #colored-gallery {
@@ -21,12 +23,15 @@
 }
 
 .circle-gallery {
-    border-radius: 50%;
+    // border-radius: 50%;
     height: 12.25rem;
     width: 12.25rem;
     margin: $u-10;
-    border: 1px solid rgb(209, 209, 209);
+    margin: $u-5 auto;
+    margin-right: $u-5;
+    border: $u-6 solid #565656;
     // margin-right: $u-10;
+    // clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
 .gallery-images {
@@ -40,26 +45,26 @@
 }
 
 .overlay-section {
-    position: absolute;
-    top: 60px;
+    // position: absolute;
+    // top: 60px;
+    // height: 12.25rem;
+    // width: 12.25rem;
+    // opacity: 0;
+    // transition: .5s ease;
+    // background-color: rgb(165, 239, 245);
     // bottom: 0;
     // left: 0;
     // right: 0;
-    height: 12.25rem;
-    width: 12.25rem;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgb(165, 239, 245);
 }
 
 .overlay-text {
-    color: rgb(71, 70, 70);
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    // color: rgb(71, 70, 70);
+    // font-size: 20px;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // -webkit-transform: translate(-50%, -50%);
+    // -ms-transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
+    // text-align: center;
 }

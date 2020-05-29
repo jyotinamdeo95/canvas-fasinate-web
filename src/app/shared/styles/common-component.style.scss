@@ -1,3 +1,4 @@
+@import '../styles/px-units.styles.scss';
 .half-transparent {
     background-color: #fefefe;
     color: grey;
@@ -16,4 +17,39 @@
 .big-bg {
     width: 100%;
     height: 300px;
+}
+
+.page-title {
+    margin-left: $u-28;
+}
+
+.centered-text {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.half-transparent {
+    background-color: #fefefe;
+    color: grey;
+}
+
+.wrapper {
+    min-height: 30rem;
+}
+
+.noMarPad {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.social-icon {
+    width: $u-30;
+    height: $u-30;
+    margin-right: $u-10;
+    margin-bottom: $u-46;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
