@@ -17,3 +17,12 @@
     font-weight: 600;
     margin: $u-10 auto;
 }
+
+
+/**-------MEDIA QUERY FOR DIV------**/
+
+@media screen and (min-width: 200px) and (max-width: 500px) and (min-height: 550px) {
+    .commissioned-wrapper {
+        height: 20rem;
+    }
+}
