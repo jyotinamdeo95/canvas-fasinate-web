@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "abouts",
+  "info": {
+    "name": "About"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "pageTitle": {
+      "type": "string"
+    },
+    "selfTitle": {
+      "type": "string"
+    },
+    "selfDescription": {
+      "type": "text"
+    },
+    "selfImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

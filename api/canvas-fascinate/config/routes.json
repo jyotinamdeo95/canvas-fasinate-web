@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/canvas-fascinates",
+      "handler": "canvas-fascinate.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/canvas-fascinates/count",
+      "handler": "canvas-fascinate.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/canvas-fascinates/:id",
+      "handler": "canvas-fascinate.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/canvas-fascinates",
+      "handler": "canvas-fascinate.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/canvas-fascinates/:id",
+      "handler": "canvas-fascinate.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/canvas-fascinates/:id",
+      "handler": "canvas-fascinate.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
