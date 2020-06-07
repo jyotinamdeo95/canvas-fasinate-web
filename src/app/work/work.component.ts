@@ -32,6 +32,10 @@ export class WorkComponent implements OnInit {
       "src":"assets/images/work/Hema-Malini-Work.jpg"
     },
     {
+      "title":"Kavya Namdeo (Niece)",
+      "src":"assets/images/work/Kavya-Work.jpg"
+    },
+    {
       "title":"Couple (Client)",
       "src":"assets/images/work/Couple-Work.jpg"
     }

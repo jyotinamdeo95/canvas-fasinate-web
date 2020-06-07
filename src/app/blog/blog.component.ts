@@ -22,12 +22,13 @@ export class BlogComponent implements OnInit {
     "assets/images/gallery/Black-white/S-Letter.jpg", "assets/images/gallery/Black-white/A-Girl.jpg"
   ];
   colored_gallery: any[] = [
-    "assets/images/gallery/colored/Dost.jpg", "assets/images/gallery/colored/Lord-ganesha.jpg",
+    
     "assets/images/gallery/colored/Radhe-Krishna.jpg", "assets/images/gallery/colored/Couple.jpg",
-    "assets/images/gallery/colored/Sai-Baba.jpg", "assets/images/gallery/colored/Buddha.jpg",
+     "assets/images/gallery/colored/Buddha.jpg", "assets/images/gallery/colored/Lord-ganesha.jpg",
+     "assets/images/gallery/colored/Chetan.jpg","assets/images/gallery/colored/Sai-Baba.jpg",
     "assets/images/gallery/colored/Dulhan.jpg", "assets/images/gallery/colored/Hema-Malini.jpg",
-    "assets/images/gallery/colored/Red-rose.png", "assets/images/gallery/colored/Dulhan-On-Wall.png",
-    "assets/images/gallery/colored/Ganesha-On-Wall.png", "assets/images/gallery/colored/Ankita.jpg"
+    "assets/images/gallery/colored/Ankita.jpg","assets/images/gallery/colored/Red-rose.png", 
+    "assets/images/gallery/colored/Dulhan-On-Wall.png","assets/images/gallery/colored/Ganesha-On-Wall.png", 
   ];
 
 
